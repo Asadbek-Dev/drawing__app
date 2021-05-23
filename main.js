@@ -12,15 +12,15 @@ canvas.addEventListener('mousemove', function (e) {
     mouse.y = e.pageY - this.offsetTop;
 }, false);
 
-cntx.lineWidth = 5
+cntx.lineWidth = 5;
 cntx.lineJoin = 'round';
 cntx.lineCap = 'round';
 
-function changethickness() {
+function changeThickness() {
     thickness = document.getElementById('thickness').value;
     cntx.lineWidth = thickness;
 }
-function changecolor() {
+function changeColor() {
     color = document.getElementById('color').value;
     cntx.strokeStyle = color;
 }
